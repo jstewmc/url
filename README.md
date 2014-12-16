@@ -48,6 +48,8 @@ echo $url;  // prints "http://example.com/qux/bar/quux/foo?quux=corge
 
 These examples are a little contrived (a string might be faster for some of these) and verbose (you can chain most of the methods). However, I think you get the point.
 
+Feel free to check out the [API documentation](https://jstewmc.github.io/url/api/0.1.0), [report an issue](https://github.com/jstewmc/url/issues), [contribute](https://github.com/jstewmc/url/blob/master/contributing.md), or [ask a question](mailto:clayjs0@gmail.com). 
+
 Url
 ---
 
@@ -247,7 +249,7 @@ A query can be treated as a string or Query object:
 $url = new Url();
 $url->setScheme('http')
 	->setHost('example.com')
-	->setQuery('foo=bar&baz=qux);
+	->setQuery('foo=bar&baz=qux');
 
 echo $url;  // prints "http://example.com?foo=bar&baz=qux"
 
@@ -377,4 +379,37 @@ Of course, we wouldn't be cool if we couldn't whip out a cryptic one-liner (usin
 echo (new Url())->setScheme('http')->setHost('example.com');
 ```
 
+## Tests
+
+I've written unit tests with an average of 93% code coverage. Most of the gaps are related to alias methods or filesystem read/write permission checks that I didn't test. This is my first attempt at a full suite of unit tests. So, let me know if I missed anything, or if I tests are a botch.
+
+## Contributing
+
+Feel free to contribute your own improvements:
+
+1. Fork
+2. Clone
+3. PHPUnit
+4. Branch
+5. PHPUnit
+6. Code
+7. PHPUnit
+8. Commit
+9. Push
+10. Pull request
+11. Relax and eat a Paleo muffin
+
+See [contributing.md](https://github.com/jstewmc/url/blob/master/contributing.md) for details.
+
+## Author
+
+Jack Clayton - [clayjs0@gmail.com](mailto:clayjs0@gmail.com).
+
+## License
+
+Url is released under the MIT License. See the [LICENSE](https://github.com/jstewmc/url/blob/master/LICENSE) file for details.
+
+## History
+
+You can view the (short) history of the Url project in the [changelog.md](https://github.com/jstewmc/url/blob/master/changelog.md) file.
 
