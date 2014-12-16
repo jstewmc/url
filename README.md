@@ -48,7 +48,7 @@ echo $url;  // prints "http://example.com/qux/bar/quux/foo?quux=corge
 
 These examples are a little contrived (a string might be faster for some of these) and verbose (you can chain most of the methods). However, I think you get the point.
 
-Feel free to check out the [API documentation](https://jstewmc.github.io/url/api/0.1.0), [report an issue](https://github.com/jstewmc/url/issues), [contribute](https://github.com/jstewmc/url/blob/master/contributing.md), or [ask a question](mailto:clayjs0@gmail.com). 
+Feel free to check out the [API documentation](https://jstewmc.github.io/url/api/0.1.0), [report an issue](https://github.com/jstewmc/url/issues), [contribute](https://github.com/jstewmc/url/blob/master/CONTRIBUTING.md), or [ask a question](mailto:clayjs0@gmail.com). 
 
 Url
 ---
@@ -379,11 +379,13 @@ Of course, we wouldn't be cool if we couldn't whip out a cryptic one-liner (usin
 echo (new Url())->setScheme('http')->setHost('example.com');
 ```
 
-## Tests
+Tests
+-----
 
-I've written unit tests with an average of 93% code coverage. Most of the gaps are related to alias methods or filesystem read/write permission checks that I didn't test. This is my first attempt at a full suite of unit tests. So, let me know if I missed anything, or if I tests are a botch.
+I've written unit tests with an average of 93% code coverage. I'm still learning how to write great tests. So, feel free to check them out and tell me what you think.
 
-## Contributing
+Contributing
+------------
 
 Feel free to contribute your own improvements:
 
@@ -399,7 +401,7 @@ Feel free to contribute your own improvements:
 10. Pull request
 11. Relax and eat a Paleo muffin
 
-See [contributing.md](https://github.com/jstewmc/url/blob/master/contributing.md) for details.
+See [contributing.md](https://github.com/jstewmc/url/blob/master/CONTRIBUTING.md) for details.
 
 ## Author
 
@@ -411,5 +413,5 @@ Url is released under the MIT License. See the [LICENSE](https://github.com/jste
 
 ## History
 
-You can view the (short) history of the Url project in the [changelog.md](https://github.com/jstewmc/url/blob/master/changelog.md) file.
+You can view the (short) history of the Url project in the [changelog.md](https://github.com/jstewmc/url/blob/master/CHANGELOG.md) file.
 
