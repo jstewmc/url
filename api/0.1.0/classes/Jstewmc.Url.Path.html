@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \Jstewmc\Url\Path
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/Jstewmc.html">Jstewmc</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method_getSegments" title="getSegments :: ">
+            <span class="description"></span><pre>getSegments</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSeparator" title="getSeparator :: ">
+            <span class="description"></span><pre>getSeparator</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSegments" title="setSegments :: ">
+            <span class="description"></span><pre>setSegments</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSeparator" title="setSeparator :: ">
+            <span class="description"></span><pre>setSeparator</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___construct" title="__construct :: Constructs the object">
+            <span class="description">Constructs the object</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method___toString" title="__toString :: Called automatically when the object is converted to a string">
+            <span class="description">Called automatically when the object is converted to a string</span><pre>__toString</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_appendSegment" title="appendSegment :: Appends $segment to the end of the path">
+            <span class="description">Appends $segment to the end of the path</span><pre>appendSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_format" title="format :: Returns the path as a string">
+            <span class="description">Returns the path as a string</span><pre>format</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getIndex" title="getIndex :: Returns the 0-based index of $segment">
+            <span class="description">Returns the 0-based index of $segment</span><pre>getIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSegment" title="getSegment :: Returns the segment at $offset">
+            <span class="description">Returns the segment at $offset</span><pre>getSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getSlice" title="getSlice :: Returns a slice of the path starting at $offset for $length segments">
+            <span class="description">Returns a slice of the path starting at $offset for $length segments</span><pre>getSlice</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getReverse" title="getReverse :: Returns the reverse of the path">
+            <span class="description">Returns the reverse of the path</span><pre>getReverse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_hasIndex" title="hasIndex :: Returns true if the path has any segment at $index">
+            <span class="description">Returns true if the path has any segment at $index</span><pre>hasIndex</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_hasSegment" title="hasSegment :: Returns true if the path has $segment (optionally, at $offset)">
+            <span class="description">Returns true if the path has $segment (optionally, at $offset)</span><pre>hasSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_insertSegment" title="insertSegment :: Inserts $segment at $offset">
+            <span class="description">Inserts $segment at $offset</span><pre>insertSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_parse" title="parse :: Parses the string path into this Path object">
+            <span class="description">Parses the string path into this Path object</span><pre>parse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_prependSegment" title="prependSegment :: Prepends $segment to the path">
+            <span class="description">Prepends $segment to the path</span><pre>prependSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_reverse" title="reverse :: Reverses this path">
+            <span class="description">Reverses this path</span><pre>reverse</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setSegment" title="setSegment :: Sets segment at $offset to $value">
+            <span class="description">Sets segment at $offset to $value</span><pre>setSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_slice" title="slice :: Slices the path">
+            <span class="description">Slices the path</span><pre>slice</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_unsetSegment" title="unsetSegment :: Unsets the segment at $offset">
+            <span class="description">Unsets the segment at $offset</span><pre>unsetSegment</pre>
+        </a>
+    </li>
+
+                                                                                                        </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected">
+                            <a href="#method_getIndexFromOffset" title="getIndexFromOffset :: Returns an index in $segments based on $offset">
+                                <span class="description">Returns an index in $segments based on $offset</span><pre>getIndexFromOffset</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>Path</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">A Uniform Resource Locator (URL) path</p>
+                <div class="details">
+                    <div class="long_description">
+                        
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        author
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Jack Clayton <a href="mailto:clayjs0@gmail.com">clayjs0@gmail.com</a></p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        copyright
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>2014 Jack Clayton</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        license
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>MIT</p>
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        since
+                                                                            </th>
+                                    <td>
+                                                                                    0.1.0
+                                                                                
+                                    </td>
+                                </tr>
+                                                                                                                <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Default</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method_getSegments"></a>
+                        <div class="element clickable method public  method_getSegments" data-toggle="collapse" data-target=".method_getSegments .collapse">
+                            <h2>getSegments</h2>
+                            <pre>getSegments() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSeparator"></a>
+                        <div class="element clickable method public  method_getSeparator" data-toggle="collapse" data-target=".method_getSeparator .collapse">
+                            <h2>getSeparator</h2>
+                            <pre>getSeparator() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSegments"></a>
+                        <div class="element clickable method public  method_setSegments" data-toggle="collapse" data-target=".method_setSegments .collapse">
+                            <h2>setSegments</h2>
+                            <pre>setSegments( $segments) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segments</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSeparator"></a>
+                        <div class="element clickable method public  method_setSeparator" data-toggle="collapse" data-target=".method_setSeparator .collapse">
+                            <h2>setSeparator</h2>
+                            <pre>setSeparator( $separator) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$separator</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Constructs the object</h2>
+                            <pre>__construct(string $path = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>If a path is given, I'll attempt to parse it.</p>
+<p>Keep in mind, I can only parse paths that use the forward-slash ("/") separator.</p>
+<p>If the path does not use the forward-slash as a separator, you should call the
+setSeparator() and parse() manually. Otherwise, my results will be wonky.</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>a path to parse (optional; if omitted, defaults to null</p>
+<pre><code>and returns a bare object)</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method___toString"></a>
+                        <div class="element clickable method public  method___toString" data-toggle="collapse" data-target=".method___toString .collapse">
+                            <h2>Called automatically when the object is converted to a string</h2>
+                            <pre>__toString() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_appendSegment"></a>
+                        <div class="element clickable method public  method_appendSegment" data-toggle="collapse" data-target=".method_appendSegment .collapse">
+                            <h2>Appends $segment to the end of the path</h2>
+                            <pre>appendSegment(string $segment) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $segment is not a string</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segment</h4>
+                                                <code>string</code><p><p>the segment to append</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_format"></a>
+                        <div class="element clickable method public  method_format" data-toggle="collapse" data-target=".method_format .collapse">
+                            <h2>Returns the path as a string</h2>
+                            <pre>format() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getIndex"></a>
+                        <div class="element clickable method public  method_getIndex" data-toggle="collapse" data-target=".method_getIndex .collapse">
+                            <h2>Returns the 0-based index of $segment</h2>
+                            <pre>getIndex(string $segment) : integer|boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>WARNING! This method may return false ($segment does not exist in the
+path) or 0 ($segment exists in the first position). Be sure to use the
+strict comparison operator === when testing this method's return values.</p>
+<p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;getIndex('foo');  // returns 0
+$path-&gt;getIndex('bar');  // returns 1
+$path-&gt;getIndex('qux');  // returns false</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $segment is not a string</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segment</h4>
+                                                <code>string</code><p><p>the segment to find (case-sensitive)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer|boolean</code><p><p>the integer index or false if the segment does not exist</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSegment"></a>
+                        <div class="element clickable method public  method_getSegment" data-toggle="collapse" data-target=".method_getSegment .collapse">
+                            <h2>Returns the segment at $offset</h2>
+                            <pre>getSegment(integer|string $offset) : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;getSegment(0);        // returns 'foo' (zero segments from beginning)
+$path-&gt;getSegment(-3);       // returns 'foo' (third segment from end)
+$path-&gt;getSegment('first');  // returns 'foo'</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not a string or integer</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is an unsupported string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset results in an invalid index</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer|string</code><p><p>if offset is non-negative, the segment that many</p>
+<pre><code>places from the beginning of the path will be returned; if offset is negative,
+the segment that many places from the end of the path will be returned; if
+offset is a non-integer string, it must be one of the following strings:
+'first', for the first segment; 'last', for the last segment; or, 'rand[om]',
+for a random segment (case-insensitive)</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getSlice"></a>
+                        <div class="element clickable method public  method_getSlice" data-toggle="collapse" data-target=".method_getSlice .collapse">
+                            <h2>Returns a slice of the path starting at $offset for $length segments</h2>
+                            <pre>getSlice(integer $offset, integer $length = null) : \Jstewmc\Url\Jstewmc\Url\Path</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>I'll return a new Path object (leaving this Path unchanged). To slice this
+path, use the slice() method instead.</p>
+<p>For example:</p>
+<pre><code>$a = new Path('foo/bar/baz');
+$b = $a-&gt;getSlice(1);
+
+echo $a;  // prints 'foo/bar/baz'
+echo $b;  // prints 'bar/baz'</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $length is not an integer or null</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>if offset is non-negative, the slice will start at that</p>
+<pre><code>offset from the beginning of the path; if offset is negative, the slice
+will start that far from the end of the path</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>integer</code><p><p>if length is given and positive, the slice will have up</p>
+<pre><code>to that many segments in it; if the path is shorter than length, then only
+the available segments will be present; if length is given and negative,
+the slice will stop that many segments from the end of the path; finally,
+if length is omitted, the slice will have everything from the offset to the
+end of the path</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\Jstewmc\Url\Jstewmc\Url\Path</code><p><p>the slice</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getReverse"></a>
+                        <div class="element clickable method public  method_getReverse" data-toggle="collapse" data-target=".method_getReverse .collapse">
+                            <h2>Returns the reverse of the path</h2>
+                            <pre>getReverse() : \Jstewmc\Url\Jstewmc\Url\Path</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>I'll return a new Path object, and I'll leave this path unchanged. To reverse
+this path, use the reverse() method instead.</p>
+<p>For example:</p>
+<pre><code>$a = new Path('foo/bar/baz');
+$b = $a-&gt;getReverse();
+
+echo $a;  // prints "foo/bar/baz"
+echo $b;  // prints "baz/bar/foo"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>\Jstewmc\Url\Jstewmc\Url\Path</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_hasIndex"></a>
+                        <div class="element clickable method public  method_hasIndex" data-toggle="collapse" data-target=".method_hasIndex .collapse">
+                            <h2>Returns true if the path has any segment at $index</h2>
+                            <pre>hasIndex(integer $offset) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;hasIndex(0);  // returns true
+$path-&gt;hasIndex(3);  // returns false</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>if offset is non-negative, the search will occur that</p>
+<pre><code>many places from the beginning of the path; if offset is negative, the search
+will occur that many places from the end of the path</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_hasSegment"></a>
+                        <div class="element clickable method public  method_hasSegment" data-toggle="collapse" data-target=".method_hasSegment .collapse">
+                            <h2>Returns true if the path has $segment (optionally, at $offset)</h2>
+                            <pre>hasSegment(string $segment, null|integer|string $offset = null) : boolean</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;hasSegment('foo');           // returns true
+$path-&gt;hasSegment('foo', 0);        // returns true
+$path-&gt;hasSegment('foo', 'first');  // returns true
+$path-&gt;hasSegment('qux');           // returns false
+$path-&gt;hasSegment('foo', 1);        // returns false</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $segment is not a string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer, not the strings</p>
+<pre><code>'first' or 'last', and not null</code></pre>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segment</h4>
+                                                <code>string</code><p><p>the segment to search for</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>null|integer|string</code><p><p>if offset is non-negative, the search will</p>
+<pre><code>occur that many places from the beginning of the path; if offset is negative,
+the search will occur that far from the end of the path; if string, must be
+'first' or 'last' (optional; if omitted, defaults to null and the segment's
+position doesn't matter)</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>boolean</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_insertSegment"></a>
+                        <div class="element clickable method public  method_insertSegment" data-toggle="collapse" data-target=".method_insertSegment .collapse">
+                            <h2>Inserts $segment at $offset</h2>
+                            <pre>insertSegment(integer $offset, string $segment) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;insertSegment('qux', 1);
+
+echo $path;  // prints "foo/qux/bar/baz"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $segment is not a string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset corresponds to invalid index</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>if offset is non-negative, the insert starts at that</p>
+<pre><code>position from the beginning of the path; if offset is negative, the insert
+starts that far from the end of the array</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segment</h4>
+                                                <code>string</code><p><p>the segment to insert</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_parse"></a>
+                        <div class="element clickable method public  method_parse" data-toggle="collapse" data-target=".method_parse .collapse">
+                            <h2>Parses the string path into this Path object</h2>
+                            <pre>parse(string $path) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Keep in mind, if $path does not use the forward-slash as its separator, you
+should set the path's separator first, before calling parse().</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $path is not a string</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$path</h4>
+                                                <code>string</code><p><p>the path to parse (with or without leading separator)</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_prependSegment"></a>
+                        <div class="element clickable method public  method_prependSegment" data-toggle="collapse" data-target=".method_prependSegment .collapse">
+                            <h2>Prepends $segment to the path</h2>
+                            <pre>prependSegment(string $segment) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;prependSegment('qux');
+
+echo $path;  // prints "qux/foo/bar/baz"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $segment is not a string</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$segment</h4>
+                                                <code>string</code><p><p>the segment to prepend to the beginning of the path</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_reverse"></a>
+                        <div class="element clickable method public  method_reverse" data-toggle="collapse" data-target=".method_reverse .collapse">
+                            <h2>Reverses this path</h2>
+                            <pre>reverse() : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>I'll change this path's segments. To leave this path unchanged and get a new
+reversed Path, use the getReverse() method instead.</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;reverse();
+
+echo $path;  // prints "baz/bar/foo"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setSegment"></a>
+                        <div class="element clickable method public  method_setSegment" data-toggle="collapse" data-target=".method_setSegment .collapse">
+                            <h2>Sets segment at $offset to $value</h2>
+                            <pre>setSegment(integer|string $offset, string $value) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;setSegment(0, 'qux');        // path is "qux/bar/baz"
+$path-&gt;setSegment('last', 'quux');  // path is "qux/bar/quux"
+$path-&gt;setSegment(-2, 'corge');     // path is "qux/corge/quux"
+
+echo $path;  // prints "qux/corge/quux"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $value is not a string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer or string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is an unsupported string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset results in an invalid index</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer|string</code><p><p>if offset is non-negative, the segment that many</p>
+<pre><code>places from the beginning of the path will be updated; if offset is negative,
+the segment that many places from the end of the path will be updated; if
+offset is a string, it must be "first", the first segment, or "last", the
+last segment (case-insensitive)</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p><p>the segment's new value</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_slice"></a>
+                        <div class="element clickable method public  method_slice" data-toggle="collapse" data-target=".method_slice .collapse">
+                            <h2>Slices the path</h2>
+                            <pre>slice(integer $offset, integer $length = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Keep in mind, I will change this path. To keep this path the same and return a
+new, sliced Path, use the getSlice() method instead.</p>
+<p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;slice(1);
+
+echo $path;  // prints "bar/baz"</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $length is not null or an integer</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>if offset is non-negative, the slice will start at that</p>
+<pre><code>offset from the beginning of the path; if offset is negative, the slice
+will start that far from the end of the path</code></pre></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$length</h4>
+                                                <code>integer</code><p><p>if length is given and positive, the slice will have up</p>
+<pre><code>to that many segments in it; if the path is shorter than length, then only
+the available segments will be present; if length is given and negative,
+the slice will stop that many segments from the end of the path; finally,
+if length is omitted, the slice will have everything from the offset to the
+end of the path (optional; if omitted, defaults to null)</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_unsetSegment"></a>
+                        <div class="element clickable method public  method_unsetSegment" data-toggle="collapse" data-target=".method_unsetSegment .collapse">
+                            <h2>Unsets the segment at $offset</h2>
+                            <pre>unsetSegment(integer|string $offset) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>Keep in mind, keys will be reset after this method call.</p>
+<p>For example:</p>
+<pre><code>$path = new Path('foo/bar/baz');
+$path-&gt;unsetSegment(0);        // path is "bar/baz"
+$path-&gt;unsetSegment('first');  // path is "baz"
+$path-&gt;unsetSegment('last');   // path is ""</code></pre></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not an integer or string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is an unsupported string</p>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset results in an invalid index</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer|string</code><p><p>if offset is non-negative, the segment that many</p>
+<pre><code>place from the beginning of the path will be removed; if offset is negative,
+the segment that many places from the end of the path will be removed; if
+the offset is a non-integer string, it must be 'first', the first segment or
+'last', the last segment (case-insensitive)</code></pre></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getIndexFromOffset"></a>
+                        <div class="element clickable method protected  method_getIndexFromOffset" data-toggle="collapse" data-target=".method_getIndexFromOffset .collapse">
+                            <h2>Returns an index in $segments based on $offset</h2>
+                            <pre>getIndexFromOffset(integer $offset) : integer</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    throws
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>if $offset is not a string</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    since
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.1.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$offset</h4>
+                                                <code>integer</code><p><p>the array's offset</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>integer</code><p><p>the array's index</p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_segments"> </a>
+                            <div class="element clickable property  protected property_segments" data-toggle="collapse" data-target=".property_segments .collapse">
+                                <h2>an array of path segments; defaults to empty array</h2>
+                                <pre>segments : array&lt;mixed,string&gt;</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>an array of path segments; defaults to empty array</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        since
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array&lt;mixed,string&gt;</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_separator"> </a>
+                            <div class="element clickable property  protected property_separator" data-toggle="collapse" data-target=".property_separator .collapse">
+                                <h2>the path&#039;s separator; defaults to forward-slash (&quot;/&quot;)</h2>
+                                <pre>separator : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>the path's separator; defaults to forward-slash ("/")</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        since
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\Jstewmc\Url\Path"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/Jstewmc.Url.html">Url</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/Jstewmc.Url.Path.html">Path</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Tue, 16 Dec 2014 21:10:00 +0000.<br/>
+    </footer>
+    </body>
+</html>
