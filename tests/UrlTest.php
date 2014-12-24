@@ -142,7 +142,7 @@ class UrlTest extends PHPUnit_Framework_TestCase
 		$this->assertEmpty($url->getPassword());
 		$this->assertEmpty($url->getHost());
 		$this->assertEmpty($url->getPort());
-		$this->assertTrue($url->getPath() instanceof Jstewmc\Url\Path);
+		$this->assertTrue($url->getPath() instanceof Jstewmc\Path\Path);
 		$this->assertTrue($url->getQuery() instanceof Jstewmc\Url\Query);
 		$this->assertEmpty($url->getFragment());
 		

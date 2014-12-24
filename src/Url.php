@@ -2,6 +2,8 @@
 
 namespace Jstewmc\Url;
 
+use Jstewmc\Path\Path;
+
 /**
  * A Uniform Resource Locator (URL)
  *
@@ -34,7 +36,7 @@ class Url
 	protected $password;
 	
 	/**
-	 * @var  Path  the url's Path
+	 * @var  Jstewmc\Path\Path  the url's Path
 	 * @since  0.1.0
 	 */
 	protected $path;
