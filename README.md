@@ -48,7 +48,7 @@ echo $url;  // prints "http://example.com/qux/bar/quux/foo?quux=corge
 
 These examples are a little contrived (a string might be faster for some of these) and verbose (you can chain most of the methods). However, I think you get the point.
 
-Feel free to check out the [API documentation](https://jstewmc.github.io/url/api/0.1.0), [report an issue](https://github.com/jstewmc/url/issues), [contribute](https://github.com/jstewmc/url/blob/master/CONTRIBUTING.md), or [ask a question](mailto:clayjs0@gmail.com). 
+Feel free to check out the [API documentation](https://jstewmc.github.io/url/api/0.1.1), [report an issue](https://github.com/jstewmc/url/issues), [contribute](https://github.com/jstewmc/url/blob/master/CONTRIBUTING.md), or [ask a question](mailto:clayjs0@gmail.com). 
 
 Url
 ---
@@ -79,7 +79,7 @@ Format
 
 As far as this class is concerned, URLs come in two formats: *relative* and *absolute*. An *absolute* URL includes all its non-empty parts. On the other hand, a *relative* URL includes the URL's path, query, and fragment.
 
-When used as a string, this class will return its absolute URL. However, you can use the format() method to return its *relative* URL:
+When used as a string, this class will return its *absolute* URL. However, you can use the format() method to return its *relative* URL:
 
 ```php
 $url = new Url();
@@ -238,6 +238,8 @@ echo $reverse;  // prints "baz/bar/foo"
 $path->reverse();
 echo $path;  // prints "baz/bar/foo"
 ```
+
+The Url class depends on my [Path class](https://github.com/jstewmc/path). See that README.md for details.
 
 Query
 -----
